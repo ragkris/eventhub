@@ -1,0 +1,21 @@
+$kind: http-request
+url: "{{base_url}}/api/events/"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "title": "PyCon India",
+      "venue": "NIMHANS Convention Centre, Bangalore",
+      "date": "2027-09-20",
+      "total_seats": 3,
+      "available_seats": 3,
+      "status": "upcoming"
+    }
+scripts:
+  - type: afterResponse
+    code: if (pm.response.code === 201) { pm.collectionVariables.set('event_id', pm.response.json().id); }
+    language: text/javascript
+order: 1000

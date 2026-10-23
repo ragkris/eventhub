@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{base_url}}/api/reservations/?event_id={{event_id}}"
+method: GET
+queryParams:
+  event_id: "{{event_id}}"
+order: 4000

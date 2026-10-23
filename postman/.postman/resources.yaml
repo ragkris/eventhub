@@ -1,0 +1,13 @@
+# Use this workspace to collaborate
+workspace:
+  id: 9af03eb0-63f7-4518-89b5-abe98c1ca261
+
+# Each entry here maps a local resource to one or more corresponding objects in Postman Cloud
+
+cloudResources:
+  collections:
+    ../postman/collections/EventHub API: e8f7613a-4ad0-4ba7-a2aa-e841aeb19443
+
+localResources:
+  collections:
+    - ../EventHub.postman_collection.json

@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{base_url}}/api/events/?status=upcoming&venue=bangalore"
+method: GET
+queryParams:
+  status: upcoming
+  venue: bangalore
+order: 3000

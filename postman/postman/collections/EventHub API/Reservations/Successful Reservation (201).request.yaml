@@ -1,0 +1,19 @@
+$kind: http-request
+url: "{{base_url}}/api/reservations/"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "event": "{{event_id}}",
+      "attendee_name": "Priya Sharma",
+      "attendee_email": "priya@example.com",
+      "seats_reserved": 2
+    }
+scripts:
+  - type: afterResponse
+    code: if (pm.response.code === 201) { pm.collectionVariables.set('reservation_id', pm.response.json().id); }
+    language: text/javascript
+order: 1000
