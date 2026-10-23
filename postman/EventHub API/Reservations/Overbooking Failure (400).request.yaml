@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{base_url}}/api/reservations/"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "event": "{{event_id}}",
+      "attendee_name": "Alex Example",
+      "attendee_email": "alex@example.com",
+      "seats_reserved": 99
+    }
+order: 2000

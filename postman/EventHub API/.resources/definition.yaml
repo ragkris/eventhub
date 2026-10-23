@@ -1,0 +1,6 @@
+$kind: collection
+description: EventHub API test requests. Run Create Event first, then Successful Reservation, Overbooking Failure, and Cancel Reservation.
+variables:
+  base_url: http://127.0.0.1:8000
+  event_id: "1"
+  reservation_id: "1"

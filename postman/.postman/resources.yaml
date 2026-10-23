@@ -10,4 +10,4 @@ cloudResources:
 
 localResources:
   collections:
-    - ../EventHub.postman_collection.json
+    - ../EventHub API
